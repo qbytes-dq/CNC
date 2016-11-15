@@ -1,0 +1,312 @@
+(AutoLeveller, Version: 0.8.6, http://autoleveller.co.uk)
+(Copyright 2013-2014 James Hawthorne PhD)
+(Original GCode file: 1-HomeSwitch.top.drill.tap)
+(Creation date: 19/04/2015 time: 18:47)
+
+(This program and any of its output is licensed under GPLv2 and as such...)
+(AutoLeveller comes with ABSOLUTELY NO WARRANTY; for details, see sections 11 and 12 of the GPLv2)
+
+(prerequisites)
+(1. need a working probe)
+(2. Zero your Z axis on or just above the surface)
+(Note: The first probe will touch off Z to 0.000 when it first touches to copper, )
+(all other probe values are relative to this first point)
+
+G21 (millimeters)
+G90 (absolute distance mode, not incremental)
+
+(begin initial probe and set Z to 0)
+G0 Z-20 (Move clear of the board first)
+G0 X0 Y0 (Move to bottom left corner)
+
+(QQ)
+G0 Z-50
+G38.2 Z-65 F10
+(QQ)
+
+G10 L20 P0 Z0
+G0 Z2.5
+G38.2 Z-1.999 F10
+G10 L20 P0 Z0
+(PROBEOPEN RawProbeLog.txt)
+G0 Z2.5
+G0 X0 Y0
+G38.2 Z-1.999 F20
+#500=#5422
+G0 Z2.5
+G0 X12.7 Y0
+G38.2 Z-1.999 F20
+#501=#5422
+G0 Z2.5
+G0 X25.4 Y0
+G38.2 Z-1.999 F20
+#502=#5422
+G0 Z2.5
+G0 X25.4 Y14.605
+G38.2 Z-1.999 F20
+#505=#5422
+G0 Z2.5
+G0 X12.7 Y14.605
+G38.2 Z-1.999 F20
+#504=#5422
+G0 Z2.5
+G0 X0 Y14.605
+G38.2 Z-1.999 F20
+#503=#5422
+G0 Z2.5
+G0 X0 Y29.21
+G38.2 Z-1.999 F20
+#506=#5422
+G0 Z2.5
+G0 X12.7 Y29.21
+G38.2 Z-1.999 F20
+#507=#5422
+G0 Z2.5
+G0 X25.4 Y29.21
+G38.2 Z-1.999 F20
+#508=#5422
+
+(QQ)
+G0 Z2.5 (go to Z finish height)
+G0 X0 Y0 Z2.5 (go to initial position)
+(QQ)
+
+(PROBECLOSE)
+
+(This is the sub-procedure used for resetting the Z position)
+(Refer to the log table above if it exists to reset Z to any of the log index's)
+(Add X Y Z positions as arguments from the log table)
+(Example usage. MDI: o100 call [43.567] [24.345] [-0.012])
+o100 sub
+	G0 Z2.5 (raise the tool above the board)
+	M5 (make sure the spindle is stopped)
+	M0 (pause for any probe wires to be attached)
+	G0 X#1 Y#2 (move to X Y position)
+	G38.2 Z-1.999 F20.0 (probe)
+	G10 L20 P0 Z#3 (set Z to position)
+	G0 Z2.5 (raise the tool above the board)
+o100 endsub
+
+(This is the sub-procedure used for returning to a position to continue engraving where you left off)
+(Use this procedure to safely return to any X Y then continue the GCode file from that line)
+(NOTE: The line number you return to must include X Y and Z coordinates)
+(NOTE: You will need to restart from this line manually after this procedure completes)
+(Example usage. MDI: o101 call [3.567] [4.345])
+o101 sub
+	G0 Z2.5 (raise the tool above the board)
+	M5 (make sure the spindle is stopped)
+	M0 (pause for any probe wires to be detached)
+	G0 X#1 Y#2 (move to input X Y position)
+	M3 (make sure the spindle is started)
+o101 endsub
+
+(Set S value to ensure Speed has a value otherwise the spindle will not start on an M3 command)
+S20000
+
+(The program will pause to allow the probe to be detached)
+(press cycle start to resume from current line)
+M0
+
+(The original mill file is now rewritten with z depth replaced with a)
+(bilinear interpolated value based on the initial probing)
+
+N0 (.../pcb-gcode-3.6.2.4/pcb-gcode.ulp)
+N10 (Copyright 2005 - 2012 by John Johnson)
+N20 (See readme.txt for licensing terms.)
+N30 (This file generated from the board:)
+N40 (.../Q-Berry2/BreakOut/1-HomeSwitch.brd)
+N50 (Current profile is .../pcb-gcode-3.6.2.4/profiles/mach.pp  )
+N60 (This file generated 4/19/2015 6:46:21 PM)
+N70 (Settings from pcb-machine.h)
+N80 (spindle on time = 3.0000)
+N90 (spindle speed = 20000.0000)
+N100 (tool change at 0.0000  0.0000  40.0000 )
+N110 (feed rate xy = F0     )
+N120 (feed rate z  = F508   )
+N130 (Z Axis Settings)
+N140 (  High     Up        Down     Drill)
+N150 (12.0000 	3.0000  	-0.8125 	-2.6000 )
+N160 (Settings from pcb-defaults.h)
+N170 (isolate min = 0.0254)
+N180 (isolate max = 0.5080)
+N190 (isolate step = 0.1270)
+N200 (Generated top outlines, top drill, bottom outlines, bottom drill, )
+N210 (Unit of measure: mm)
+N220 ( Tool|       Size       |  Min Sub |  Max Sub |   Count )
+N230 ( T01 | 0.813mm 0.0320in | 0.0000in | 0.0000in |       0 )
+N240 ( T02 | 1.000mm 0.0394in | 0.0000in | 0.0000in |       0 )
+N250 ( T03 | 3.200mm 0.1260in | 0.0000in | 0.0000in |       0 )
+N260 (Metric Mode)
+N270 G21
+N280 (Absolute Coordinates)
+N290 G90
+N300 S20000
+N310 G0 Z12
+N320 G0 X0  Y0
+N330 M3
+N340 G4 P3
+
+(QQ)
+G0 Z2.5
+G10 L20 P0 Z[2.5 - 57]
+(The program will pause to allow the spinner to be turned off)
+(press cycle start to resume from current line)
+M0
+G0 X0 Y0 (Move to bottom left corner)
+G28 (my home)
+(QQ)
+
+N350 M5
+N360 G0 Z40
+N370 M6 T1  ; 0.8128
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N380 G1 Z[#100 + 0]   F508
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N390 M6
+N400 G0 Z3
+N410 M3
+N420 G4 P3
+N430 G0 X16.51 Y19.05
+#102=[#504+0.304348*#507-0.304348*#504]
+#101=[#505+0.304348*#508-0.304348*#505]
+#100=[#102+0.3*#101-0.3*#102]
+N440 G1 Z[#100 + -2.6]  F508
+N450 G0 Z3
+N460 G0 X19.05 Y19.05
+#102=[#504+0.304348*#507-0.304348*#504]
+#101=[#505+0.304348*#508-0.304348*#505]
+#100=[#102+0.5*#101-0.5*#102]
+N470 G1 Z[#100 + -2.6]  F508
+N480 G0 Z3
+N490 G0 X19.05 Y26.67
+#102=[#504+0.826087*#507-0.826087*#504]
+#101=[#505+0.826087*#508-0.826087*#505]
+#100=[#102+0.5*#101-0.5*#102]
+N500 G1 Z[#100 + -2.6]  F508
+N510 G0 Z3
+N520 G0 X16.51 Y26.67
+#102=[#504+0.826087*#507-0.826087*#504]
+#101=[#505+0.826087*#508-0.826087*#505]
+#100=[#102+0.3*#101-0.3*#102]
+N530 G1 Z[#100 + -2.6]  F508
+N540 G0 Z3
+N550 G0 X17.78 Y7.62
+#102=[#501+0.521739*#504-0.521739*#501]
+#101=[#502+0.521739*#505-0.521739*#502]
+#100=[#102+0.4*#101-0.4*#102]
+N560 G1 Z[#100 + -2.6]  F508
+N570 G0 Z3
+N580 G0 X19.05 Y5.715
+#102=[#501+0.391304*#504-0.391304*#501]
+#101=[#502+0.391304*#505-0.391304*#502]
+#100=[#102+0.5*#101-0.5*#102]
+N590 G1 Z[#100 + -2.6]  F508
+N600 G0 Z3
+N610 G0 X20.32 Y7.62
+#102=[#501+0.521739*#504-0.521739*#501]
+#101=[#502+0.521739*#505-0.521739*#502]
+#100=[#102+0.6*#101-0.6*#102]
+N620 G1 Z[#100 + -2.6]  F508
+N630 G0 Z3
+
+(QQ)
+G0 Z2.5
+G10 L20 P0 Z[2.5 - 57]
+(The program will pause to allow the spinner to be turned off)
+(press cycle start to resume from current line)
+M0
+G0 X0 Y0 (Move to bottom left corner)
+G28 (my home)
+(QQ)
+
+N640 M5
+N650 G0 Z40
+N660 G0 X0  Y0
+N670 M6 T2  ; 1
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N680 G1 Z[#100 + 0]   F508
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N690 M6
+N700 G0 Z3
+N710 M3
+N720 G4 P3
+N730 G0 X10.16 Y7.62
+#102=[#500+0.521739*#503-0.521739*#500]
+#101=[#501+0.521739*#504-0.521739*#501]
+#100=[#102+0.8*#101-0.8*#102]
+N740 G1 Z[#100 + -2.6]  F508
+N750 G0 Z3
+N760 G0 X10.16 Y10.16
+#102=[#500+0.695652*#503-0.695652*#500]
+#101=[#501+0.695652*#504-0.695652*#501]
+#100=[#102+0.8*#101-0.8*#102]
+N770 G1 Z[#100 + -2.6]  F508
+N780 G0 Z3
+N790 G0 X10.16 Y12.7
+#102=[#500+0.869565*#503-0.869565*#500]
+#101=[#501+0.869565*#504-0.869565*#501]
+#100=[#102+0.8*#101-0.8*#102]
+N800 G1 Z[#100 + -2.6]  F508
+N810 G0 Z3
+
+(QQ)
+G0 Z2.5
+G10 L20 P0 Z[2.5 - 57]
+(The program will pause to allow the spinner to be turned off)
+(press cycle start to resume from current line)
+M0
+G0 X0 Y0 (Move to bottom left corner)
+G28 (my home)
+(QQ)
+
+N820 M5
+N830 G0 Z40
+N840 G0 X0  Y0
+N850 M6 T3  ; 3.2
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N860 G1 Z[#100 + 0]   F508
+#102=#500
+#101=[#500+0*#503-0*#500]
+#100=[#102+0*#101-0*#102]
+N870 M6
+N880 G0 Z3
+N890 M3
+N900 G4 P3
+N910 G0 X10.16 Y29.21
+#102=[#506+0*#507-0*#506]
+#101=#507
+#100=[#102+0.8*#101-0.8*#102]
+N920 G1 Z[#100 + -2.6]  F508
+N930 G0 Z3
+N940 G0 X25.4 Y7.62
+#102=[#501+0.521739*#504-0.521739*#501]
+#101=[#502+0.521739*#505-0.521739*#502]
+#100=[#102+1*#101-1*#102]
+N950 G1 Z[#100 + -2.6]  F508
+N960 G0 Z3
+N970 T1
+N980 G0 Z12
+
+(QQ)
+G0 Z2.5
+G10 L20 P0 Z[2.5 - 57]
+(The program will pause to allow the spinner to be turned off)
+(press cycle start to resume from current line)
+M0
+G0 X0 Y0 (Move to bottom left corner)
+G28 (my home)
+(QQ)
+
+N990 M5
+N1000 M2
+

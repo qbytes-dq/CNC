@@ -1,0 +1,60 @@
+N00000 (.../pcb-gcode-3.6.2.4/pcb-gcode.ulp)
+N00010 (Copyright 2005 - 2012 by John Johnson)
+N00020 (See readme.txt for licensing terms.)
+N00030 (This file generated from the board:)
+N00040 (.../examples/Q-Berry2/CNC_LED/CNC LED.brd)
+N00050 (Current profile is .../pcb-gcode-3.6.2.4/profiles/emc.pp  )
+N00060 (This file generated 10/25/2015 5:48:56 PM)
+N00070 (Settings from pcb-machine.h)
+N00080 (spindle on time = 3.0000)
+N00090 (spindle speed = 20000.0000)
+N00100 (tool change at 25.0000 25.0000 20.0000 )
+N00110 (feed rate xy = F0.00  )
+N00120 (feed rate z  = F508.00 )
+N00130 (Z Axis Settings)
+N00140 (  High     Up        Down     Drill)
+N00150 (20.0000 	3.0000 	-0.1250 	-4.5550 )
+N00160 (Settings from pcb-defaults.h)
+N00170 (isolate min = 0.0025)
+N00180 (isolate max = 0.2540)
+N00190 (isolate step = 0.1270)
+N00200 (Generated top outlines, top drill, bottom outlines, bottom drill, )
+N00210 (Unit of measure: mm)
+N00220 ( Tool|       Size       |  Min Sub |  Max Sub |   Count )
+N00230 ( T01 | 1.000mm 0.0394in | 0.0000in | 0.0000in |       0 )
+N00240 ( T02 | 1.016mm 0.0400in | 0.0000in | 0.0000in |       0 )
+N00250 (Metric Mode)
+N00260 G21
+N00270 (Absolute Coordinates)
+N00280 G90
+N00290 S20000
+N00300 G00 Z20.0000 
+N00310 G00 X0.0000 Y0.0000 
+N00320 M03
+N00330 G04 P3.000000
+N00340 M05
+N00350 G00 X25.0000 Y25.0000 
+N00360 M06 T01 (1.0000 )
+N00370 G00 Z3.0000 
+N00380 M03
+N00390 G04 P3.000000
+N00400 G00 X39.3700 Y40.0050 
+N00410 G01 Z-4.5550 F508.00 
+N00420 G00 Z3.0000 
+N00430 M05
+N00440 G00 Z20.0000 
+N00450 G00 X25.0000 Y25.0000 
+N00460 M06 T02 (1.0160 )
+N00470 G00 Z3.0000 
+N00480 M03
+N00490 G04 P3.000000
+N00500 G00 X27.4017 Y13.8210 
+N00510 G01 Z-4.5550 F508.00 
+N00520 G00 Z3.0000 
+N00530 G00 X29.7483 Y12.8490 
+N00540 G01 Z-4.5550 F508.00 
+N00550 G00 Z3.0000 
+N00560 T01 
+N00570 G00 Z20.0000 
+N00580 M05
+N00590 M02
