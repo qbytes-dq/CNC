@@ -1,0 +1,926 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1009
+  9
+$EXTMAX
+ 10
+300.0
+ 20
+300.0
+ 30
+0.0
+  9
+$EXTMIN
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$INSUNITS
+ 70
+     4
+  9
+$LUNITS
+ 70
+     2
+  9
+$LUPREC
+ 70
+     4
+  9
+$MEASUREMENT
+ 70
+     1
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LAYER
+ 70
+     1
+  0
+LAYER
+  2
+0
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+  0
+LAYER
+  2
+Mount-Head
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Mounts
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+PCB_Top
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+PCB_Bottom
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Drill_Mount
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Drill_Guide-Hor
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Drill_Guide-Vert
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Drill_Holder
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+PCB_TB_outline
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+ENDTAB
+  0
+TABLE
+  2
+APPID
+ 70
+     1
+  0
+APPID
+  2
+ACAD
+ 70
+     0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+CIRCLE
+  8
+Mount-Head
+ 10
+10.0
+ 20
+14.5
+ 30
+-15.0
+ 40
+6.5
+  0
+CIRCLE
+  8
+Mount-Head
+ 10
+10.0
+ 20
+285.5
+ 30
+-20.0
+ 40
+6.5
+  0
+CIRCLE
+  8
+Mount-Head
+ 10
+290.0
+ 20
+14.5
+ 30
+-20.0
+ 40
+6.5
+  0
+CIRCLE
+  8
+Mount-Head
+ 10
+290.0
+ 20
+285.5
+ 30
+-20.0
+ 40
+6.5
+  0
+CIRCLE
+  8
+Mounts
+ 10
+10.0
+ 20
+14.5
+ 30
+-20.0
+ 40
+2.95
+  0
+CIRCLE
+  8
+Mounts
+ 10
+10.0
+ 20
+285.5
+ 30
+-20.0
+ 40
+2.95
+  0
+CIRCLE
+  8
+Mounts
+ 10
+290.0
+ 20
+14.5
+ 30
+-20.0
+ 40
+2.95
+  0
+CIRCLE
+  8
+Mounts
+ 10
+290.0
+ 20
+285.5
+ 30
+-20.0
+ 40
+2.95
+  0
+CIRCLE
+  8
+PCB_Top
+ 10
+156.5
+ 20
+26.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Top
+ 10
+156.5
+ 20
+88.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Top
+ 10
+243.5
+ 20
+26.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Top
+ 10
+243.5
+ 20
+88.0
+ 30
+5.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Bottom
+ 10
+143.5
+ 20
+26.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Bottom
+ 10
+143.5
+ 20
+88.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Bottom
+ 10
+56.5
+ 20
+26.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+PCB_Bottom
+ 10
+56.5
+ 20
+88.0
+ 30
+5.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+156.5
+ 20
+136.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+243.5
+ 20
+136.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+243.5
+ 20
+198.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+156.5
+ 20
+198.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+156.5
+ 20
+211.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+243.5
+ 20
+211.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+156.5
+ 20
+273.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Mount
+ 10
+243.5
+ 20
+273.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+160.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+170.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+180.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+190.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+200.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+210.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+220.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+230.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+240.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Hor
+ 10
+250.0
+ 20
+130.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+140.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+150.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+160.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+170.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+180.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+190.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+200.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+210.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+220.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+230.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+240.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+250.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+260.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+270.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Guide-Vert
+ 10
+150.0
+ 20
+280.0
+ 30
+0.0
+ 40
+3.09
+  0
+CIRCLE
+  8
+Drill_Holder
+ 10
+135.0
+ 20
+167.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Holder
+ 10
+135.0
+ 20
+242.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Holder
+ 10
+265.5
+ 20
+242.5
+ 30
+0.0
+ 40
+2.255
+  0
+CIRCLE
+  8
+Drill_Holder
+ 10
+265.5
+ 20
+167.5
+ 30
+0.0
+ 40
+2.255
+  0
+POLYLINE
+  8
+PCB_TB_outline
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+50.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+150.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+150.0
+ 20
+95.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+50.0
+ 20
+95.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+PCB_TB_outline
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+150.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+250.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+250.0
+ 20
+95.0
+ 42
+0.0
+  0
+VERTEX
+  8
+PCB_TB_outline
+ 10
+150.0
+ 20
+95.0
+ 42
+0.0
+  0
+SEQEND
+  0
+ENDSEC
+  0
+EOF

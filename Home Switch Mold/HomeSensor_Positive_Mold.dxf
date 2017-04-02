@@ -1,0 +1,984 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1009
+  9
+$EXTMAX
+ 10
+80.0
+ 20
+110.0
+ 30
+0.0
+  9
+$EXTMIN
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$INSUNITS
+ 70
+     4
+  9
+$LUNITS
+ 70
+     2
+  9
+$LUPREC
+ 70
+     4
+  9
+$MEASUREMENT
+ 70
+     1
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LAYER
+ 70
+     1
+  0
+LAYER
+  2
+0
+ 70
+     0
+ 62
+     7
+  6
+Continuous
+  0
+LAYER
+  2
+Positive_Mold
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Drill_Holes
+ 70
+     0
+ 62
+   -70
+  6
+Continuous
+  0
+LAYER
+  2
+Case
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Cover
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Sensor_Arm_1
+ 70
+     0
+ 62
+    70
+  6
+Continuous
+  0
+LAYER
+  2
+Sensor_Arm_2
+ 70
+     0
+ 62
+   -70
+  6
+Continuous
+  0
+ENDTAB
+  0
+TABLE
+  2
+APPID
+ 70
+     1
+  0
+APPID
+  2
+ACAD
+ 70
+     0
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+POLYLINE
+  8
+Positive_Mold
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Positive_Mold
+ 10
+1.0
+ 20
+1.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Positive_Mold
+ 10
+79.0
+ 20
+1.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Positive_Mold
+ 10
+79.0
+ 20
+109.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Positive_Mold
+ 10
+1.0
+ 20
+109.0
+ 42
+0.0
+  0
+SEQEND
+  0
+CIRCLE
+  8
+Drill_Holes
+ 10
+37.0
+ 20
+7.0
+ 30
+0.0
+ 40
+1.05
+  0
+CIRCLE
+  8
+Drill_Holes
+ 10
+37.0
+ 20
+183.0
+ 30
+0.0
+ 40
+1.05
+  0
+POLYLINE
+  8
+Case
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Case
+ 10
+18.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+43.0
+ 20
+20.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+43.0
+ 20
+51.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+18.0
+ 20
+51.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Case
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Case
+ 10
+16.0
+ 20
+18.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+45.0
+ 20
+18.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+45.0
+ 20
+53.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+16.0
+ 20
+53.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Case
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Case
+ 10
+28.25
+ 20
+22.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+34.75
+ 20
+22.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+34.75
+ 20
+31.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+28.25
+ 20
+31.5
+ 42
+0.0
+  0
+SEQEND
+  0
+CIRCLE
+  8
+Case
+ 10
+22.81
+ 20
+46.4
+ 30
+0.0
+ 40
+1.5
+  0
+CIRCLE
+  8
+Case
+ 10
+30.43
+ 20
+43.86
+ 30
+0.0
+ 40
+2.55
+  0
+CIRCLE
+  8
+Case
+ 10
+30.43
+ 20
+36.24
+ 30
+0.0
+ 40
+2.55
+  0
+CIRCLE
+  8
+Case
+ 10
+38.05
+ 20
+24.81
+ 30
+0.0
+ 40
+1.5
+  0
+POLYLINE
+  8
+Case
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Case
+ 10
+13.0
+ 20
+24.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+19.0
+ 20
+24.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+19.0
+ 20
+33.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+13.0
+ 20
+33.5
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Case
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Case
+ 10
+14.0
+ 20
+16.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+47.0
+ 20
+16.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+47.0
+ 20
+55.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Case
+ 10
+14.0
+ 20
+55.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Cover
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Cover
+ 10
+16.0
+ 20
+62.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+41.0
+ 20
+62.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+41.0
+ 20
+93.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+16.0
+ 20
+93.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Cover
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Cover
+ 10
+14.0
+ 20
+60.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+43.0
+ 20
+60.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+43.0
+ 20
+95.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+14.0
+ 20
+95.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Cover
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Cover
+ 10
+12.5
+ 20
+66.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+19.5
+ 20
+66.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+19.5
+ 20
+75.5
+ 42
+0.0
+  0
+VERTEX
+  8
+Cover
+ 10
+12.5
+ 20
+75.5
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Sensor_Arm_1
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+54.0
+ 20
+18.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+66.0
+ 20
+18.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+66.0
+ 20
+92.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+54.0
+ 20
+92.0
+ 42
+0.0
+  0
+SEQEND
+  0
+CIRCLE
+  8
+Sensor_Arm_1
+ 10
+60.0
+ 20
+86.0
+ 30
+0.0
+ 40
+3.25
+  0
+CIRCLE
+  8
+Sensor_Arm_1
+ 10
+60.0
+ 20
+79.0
+ 30
+0.0
+ 40
+3.25
+  0
+POLYLINE
+  8
+Sensor_Arm_1
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+52.0
+ 20
+16.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+68.0
+ 20
+16.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+68.0
+ 20
+94.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_1
+ 10
+52.0
+ 20
+94.0
+ 42
+0.0
+  0
+SEQEND
+  0
+CIRCLE
+  8
+Sensor_Arm_2
+ 10
+58.0
+ 20
+119.0
+ 30
+0.0
+ 40
+3.25
+  0
+POLYLINE
+  8
+Sensor_Arm_2
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+53.0
+ 20
+90.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+63.0
+ 20
+90.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+63.0
+ 20
+125.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+53.0
+ 20
+125.0
+ 42
+0.0
+  0
+SEQEND
+  0
+POLYLINE
+  8
+Sensor_Arm_2
+ 66
+     1
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 70
+     1
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+51.0
+ 20
+88.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+65.0
+ 20
+88.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+65.0
+ 20
+127.0
+ 42
+0.0
+  0
+VERTEX
+  8
+Sensor_Arm_2
+ 10
+51.0
+ 20
+127.0
+ 42
+0.0
+  0
+SEQEND
+  0
+ENDSEC
+  0
+EOF
