@@ -8,3 +8,5 @@ Components included are:
 - etc...
 
 TAGs will be created upon projects being available, not every commit.
+
+SCH files are Eagle schematics.
