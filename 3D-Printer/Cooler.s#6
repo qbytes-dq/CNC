@@ -6099,8 +6099,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="PAD1" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="PAD2" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="PAD5" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
-<part name="PAD6" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="FAN-" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="FAN+" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="PAD3" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="PAD4" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
@@ -6160,8 +6160,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="P+7" gate="1" x="210.82" y="93.98"/>
 <instance part="PAD1" gate="G$1" x="7.62" y="96.52" rot="R270"/>
 <instance part="PAD2" gate="G$1" x="15.24" y="96.52" rot="R270"/>
-<instance part="PAD5" gate="G$1" x="198.12" y="73.66" rot="R180"/>
-<instance part="PAD6" gate="G$1" x="210.82" y="73.66" rot="R90"/>
+<instance part="FAN-" gate="G$1" x="198.12" y="73.66" rot="R180"/>
+<instance part="FAN+" gate="G$1" x="210.82" y="73.66" rot="R90"/>
 <instance part="PAD3" gate="G$1" x="-40.64" y="78.74"/>
 <instance part="PAD4" gate="G$1" x="-17.78" y="76.2"/>
 <instance part="GND6" gate="1" x="-33.02" y="35.56"/>
@@ -6311,7 +6311,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="P+7" gate="1" pin="+12V"/>
 <wire x1="210.82" y1="91.44" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="PAD6" gate="G$1" pin="P"/>
+<pinref part="FAN+" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
@@ -6435,7 +6435,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="4Y"/>
 <wire x1="195.58" y1="73.66" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="PAD5" gate="G$1" pin="P"/>
+<pinref part="FAN-" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="+3V3" class="0">

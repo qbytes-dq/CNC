@@ -6368,7 +6368,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="P+12" gate="1" pin="+5V"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$14" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
 <pinref part="R3" gate="G$1" pin="2"/>
