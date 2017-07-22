@@ -6385,10 +6385,10 @@ http://www.xganon.com</description>
 <instance part="PAD11" gate="G$1" x="39.878" y="139.954" rot="R270"/>
 <instance part="PAD12" gate="G$1" x="62.484" y="139.7" rot="R270"/>
 <instance part="R7" gate="G$1" x="-12.7" y="53.34" rot="R90"/>
-<instance part="R8" gate="G$1" x="-12.7" y="38.1" rot="R90"/>
+<instance part="R8" gate="G$1" x="-12.7" y="35.56" rot="R90"/>
 <instance part="R9" gate="G$1" x="-5.08" y="53.34" rot="R90"/>
-<instance part="R10" gate="G$1" x="-5.08" y="38.1" rot="R90"/>
-<instance part="GND8" gate="1" x="-8.89" y="27.94"/>
+<instance part="R10" gate="G$1" x="-5.08" y="35.56" rot="R90"/>
+<instance part="GND8" gate="1" x="-8.89" y="25.4"/>
 <instance part="P+11" gate="1" x="-12.7" y="63.5"/>
 <instance part="P+12" gate="1" x="-5.08" y="63.5"/>
 <instance part="SET_BED" gate="G$1" x="15.494" y="68.58"/>
@@ -6514,12 +6514,12 @@ http://www.xganon.com</description>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="33.02" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="30.48" x2="-12.7" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="30.48" x2="-8.89" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="27.94" x2="-8.89" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="30.48" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-8.89" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="27.94" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-8.89" y1="27.94" x2="-5.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6732,24 +6732,12 @@ http://www.xganon.com</description>
 <wire x1="5.08" y1="45.72" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="43.18" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="40.64" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
 <junction x="-5.08" y="45.72"/>
 <wire x1="-5.08" y1="45.72" x2="-5.08" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="45.72" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <wire x1="35.56" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<wire x1="7.62" y1="43.18" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="43.18" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-12.7" y="43.18"/>
-<wire x1="7.62" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="A3"/>
-<wire x1="35.56" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -6783,28 +6771,23 @@ http://www.xganon.com</description>
 <junction x="24.892" y="66.04"/>
 </segment>
 </net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="40.64" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-12.7" y="43.18"/>
+<wire x1="-12.7" y1="43.18" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="43.18" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="A3"/>
+<wire x1="35.56" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<junction x="7.62" y="43.18"/>
+<wire x1="-12.7" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,137.16,68.58,IC1,GND1,GND,,,"/>
-<approved hash="104,1,137.16,63.5,IC1,GND2,GND,,,"/>
-<approved hash="104,1,137.16,48.26,IC1,VCC2,+12V,,,"/>
-<approved hash="104,1,167.64,83.82,IC1,VCC1,+5V,,,"/>
-<approved hash="104,1,167.64,68.58,IC1,GND3,GND,,,"/>
-<approved hash="104,1,167.64,63.5,IC1,GND4,GND,,,"/>
-<approved hash="208,1,162.56,129.54,+5V,out,,,,"/>
-<approved hash="208,1,170.18,137.16,+5V,sup,,,,"/>
-<approved hash="208,1,25.4,58.42,+5V,sup,,,,"/>
-<approved hash="208,1,175.26,83.82,+5V,sup,,,,"/>
-<approved hash="208,1,78.74,96.52,+5V,sup,,,,"/>
-<approved hash="208,1,223.52,38.1,+5V,sup,,,,"/>
-<approved hash="108,1,175.26,66.04,GND,,,,,"/>
-<approved hash="108,1,-33.02,38.1,GND,,,,,"/>
-<approved hash="108,1,76.2,30.48,GND,,,,,"/>
-<approved hash="108,1,132.08,66.04,GND,,,,,"/>
-<approved hash="108,1,-10.16,45.72,GND,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>

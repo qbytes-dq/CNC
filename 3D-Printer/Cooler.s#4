@@ -6123,6 +6123,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="SET_BED" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="SET_CHAS" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="R11" library="adafruit" deviceset="R-US_" device="0309/10"/>
+<part name="PAD3" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 </parts>
 <sheets>
 <sheet>
@@ -6185,6 +6186,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="SET_BED" gate="G$1" x="21.844" y="73.66"/>
 <instance part="SET_CHAS" gate="G$1" x="29.972" y="71.12"/>
 <instance part="R11" gate="G$1" x="78.74" y="76.2" rot="R270"/>
+<instance part="PAD3" gate="G$1" x="73.66" y="76.2" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6553,7 +6555,12 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="U$1" gate="G$1" pin="3"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="63.5" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="63.5" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="68.58" width="0.1524" layer="91"/>
+<junction x="78.74" y="68.58"/>
+<wire x1="78.74" y1="68.58" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="68.58" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="G$1" pin="P"/>
 </segment>
 </net>
 </nets>

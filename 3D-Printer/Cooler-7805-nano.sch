@@ -6336,6 +6336,7 @@ http://www.xganon.com</description>
 <part name="U$2" library="Arduino-clone" deviceset="NANO" device=""/>
 <part name="SET_BED" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="SET_CHAS" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="CY6" library="resistor" deviceset="CY" device="YC7B5"/>
 </parts>
 <sheets>
 <sheet>
@@ -6403,6 +6404,7 @@ http://www.xganon.com</description>
 <instance part="U$2" gate="G$1" x="58.42" y="71.12"/>
 <instance part="SET_BED" gate="G$1" x="11.176" y="63.5"/>
 <instance part="SET_CHAS" gate="G$1" x="14.224" y="60.96"/>
+<instance part="CY6" gate="G$1" x="111.76" y="73.66" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6585,6 +6587,9 @@ http://www.xganon.com</description>
 <junction x="119.38" y="83.82"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="81.28" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="CY6" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="78.74" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+8" gate="1" pin="+5V"/>
@@ -6751,10 +6756,13 @@ http://www.xganon.com</description>
 <wire x1="119.38" y1="63.5" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
 <junction x="119.38" y="68.58"/>
 <wire x1="119.38" y1="68.58" x2="119.38" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="68.58" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="PAD3" gate="G$1" pin="P"/>
 <pinref part="U$2" gate="G$1" pin="D3"/>
+<pinref part="CY6" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="71.12" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="68.58" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">

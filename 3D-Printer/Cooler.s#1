@@ -6056,6 +6056,137 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="CRE-Lib1">
+<packages>
+<package name="PDIP-32">
+<wire x1="-1.524" y1="1.524" x2="16.764" y2="1.524" width="0.127" layer="21"/>
+<wire x1="16.764" y1="1.524" x2="16.764" y2="-42.164" width="0.127" layer="21"/>
+<wire x1="16.764" y1="-42.164" x2="-1.524" y2="-42.164" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-42.164" x2="-1.524" y2="1.524" width="0.127" layer="21"/>
+<pad name="D1/TX" x="0" y="-2.54" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="D0/RX" x="0" y="-5.08" drill="0.8" diameter="1.778"/>
+<pad name="RESET" x="0" y="-7.62" drill="0.8" diameter="1.778"/>
+<pad name="GND" x="0" y="-10.16" drill="0.8" diameter="1.778"/>
+<pad name="D2" x="0" y="-12.7" drill="0.8" diameter="1.778"/>
+<pad name="D3" x="0" y="-15.24" drill="0.8" diameter="1.778"/>
+<pad name="D4" x="0" y="-17.78" drill="0.8" diameter="1.778"/>
+<pad name="D5" x="0" y="-20.32" drill="0.8" diameter="1.778"/>
+<pad name="D6" x="0" y="-22.86" drill="0.8" diameter="1.778"/>
+<pad name="D7" x="0" y="-25.4" drill="0.8" diameter="1.778"/>
+<pad name="D8" x="0" y="-27.94" drill="0.8" diameter="1.778"/>
+<pad name="D9" x="0" y="-30.48" drill="0.8" diameter="1.778"/>
+<pad name="D10" x="0" y="-33.02" drill="0.8" diameter="1.778"/>
+<pad name="D11" x="0" y="-35.56" drill="0.8" diameter="1.778"/>
+<pad name="D12" x="0" y="-38.1" drill="0.8" diameter="1.778"/>
+<pad name="VIN" x="15.24" y="-2.54" drill="0.8" diameter="1.778"/>
+<pad name="GND1" x="15.24" y="-5.08" drill="0.8" diameter="1.778"/>
+<pad name="RESET1" x="15.24" y="-7.62" drill="0.8" diameter="1.778"/>
+<pad name="+5V" x="15.24" y="-10.16" drill="0.8" diameter="1.778"/>
+<pad name="A0" x="15.24" y="-12.7" drill="0.8" diameter="1.778"/>
+<pad name="A1" x="15.24" y="-15.24" drill="0.8" diameter="1.778"/>
+<pad name="A2" x="15.24" y="-17.78" drill="0.8" diameter="1.778"/>
+<pad name="A3" x="15.24" y="-20.32" drill="0.8" diameter="1.778"/>
+<pad name="A4" x="15.24" y="-22.86" drill="0.8" diameter="1.778"/>
+<pad name="A5" x="15.24" y="-25.4" drill="0.8" diameter="1.778"/>
+<pad name="A6" x="15.24" y="-27.94" drill="0.8" diameter="1.778"/>
+<pad name="A7" x="15.24" y="-30.48" drill="0.8" diameter="1.778"/>
+<pad name="AREF" x="15.24" y="-33.02" drill="0.8" diameter="1.778"/>
+<pad name="3V3" x="15.24" y="-35.56" drill="0.8" diameter="1.778"/>
+<pad name="D13" x="15.24" y="-38.1" drill="0.8" diameter="1.778"/>
+<hole x="0" y="0" drill="1.778"/>
+<hole x="0" y="-40.64" drill="1.778"/>
+<hole x="15.24" y="-40.64" drill="1.778"/>
+<hole x="15.24" y="0" drill="1.778"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ARDUINONANO">
+<description>Arduino Nano V3</description>
+<wire x1="0" y1="-76.2" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-76.2" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-76.2" x2="0" y2="-76.2" width="0.254" layer="94"/>
+<pin name="D1/TX" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+<pin name="D0/RX" x="-5.08" y="-7.62" visible="pin" length="middle"/>
+<pin name="RESET" x="-5.08" y="-12.7" visible="pin" length="middle"/>
+<pin name="GND" x="-5.08" y="-17.78" visible="pin" length="middle"/>
+<pin name="D2" x="-5.08" y="-22.86" visible="pin" length="middle"/>
+<pin name="D3" x="-5.08" y="-27.94" visible="pin" length="middle"/>
+<pin name="D4" x="-5.08" y="-33.02" visible="pin" length="middle"/>
+<pin name="D5" x="-5.08" y="-38.1" visible="pin" length="middle"/>
+<pin name="D6" x="-5.08" y="-43.18" visible="pin" length="middle"/>
+<pin name="D7" x="-5.08" y="-48.26" visible="pin" length="middle"/>
+<pin name="D8" x="-5.08" y="-53.34" visible="pin" length="middle"/>
+<pin name="D9" x="-5.08" y="-58.42" visible="pin" length="middle"/>
+<pin name="D10" x="-5.08" y="-63.5" visible="pin" length="middle"/>
+<pin name="D11" x="-5.08" y="-68.58" visible="pin" length="middle"/>
+<pin name="D12" x="-5.08" y="-73.66" visible="pin" length="middle"/>
+<pin name="VIN" x="25.4" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND1" x="25.4" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET1" x="25.4" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="+5V" x="25.4" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="A7" x="25.4" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="A6" x="25.4" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="A5" x="25.4" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="A4" x="25.4" y="-38.1" visible="pin" length="middle" rot="R180"/>
+<pin name="A3" x="25.4" y="-43.18" visible="pin" length="middle" rot="R180"/>
+<pin name="A2" x="25.4" y="-48.26" visible="pin" length="middle" rot="R180"/>
+<pin name="A1" x="25.4" y="-53.34" visible="pin" length="middle" rot="R180"/>
+<pin name="A0" x="25.4" y="-58.42" visible="pin" length="middle" rot="R180"/>
+<pin name="AREF" x="25.4" y="-63.5" visible="pin" length="middle" rot="R180"/>
+<pin name="3V3" x="25.4" y="-68.58" visible="pin" length="middle" rot="R180"/>
+<pin name="D13" x="25.4" y="-73.66" visible="pin" length="middle" rot="R180"/>
+<text x="10.16" y="2.54" size="1.778" layer="95" align="bottom-center">Arduino Nano V3</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARDUINONANO">
+<description>Arduino Nano</description>
+<gates>
+<gate name="G$1" symbol="ARDUINONANO" x="-10.16" y="38.1"/>
+</gates>
+<devices>
+<device name="" package="PDIP-32">
+<connects>
+<connect gate="G$1" pin="+5V" pad="+5V"/>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="A0" pad="A7"/>
+<connect gate="G$1" pin="A1" pad="A6"/>
+<connect gate="G$1" pin="A2" pad="A5"/>
+<connect gate="G$1" pin="A3" pad="A4"/>
+<connect gate="G$1" pin="A4" pad="A3"/>
+<connect gate="G$1" pin="A5" pad="A2"/>
+<connect gate="G$1" pin="A6" pad="A1"/>
+<connect gate="G$1" pin="A7" pad="A0"/>
+<connect gate="G$1" pin="AREF" pad="AREF"/>
+<connect gate="G$1" pin="D0/RX" pad="D0/RX"/>
+<connect gate="G$1" pin="D1/TX" pad="D1/TX"/>
+<connect gate="G$1" pin="D10" pad="D10"/>
+<connect gate="G$1" pin="D11" pad="D11"/>
+<connect gate="G$1" pin="D12" pad="D12"/>
+<connect gate="G$1" pin="D13" pad="D13"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D3" pad="D3"/>
+<connect gate="G$1" pin="D4" pad="D4"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7" pad="D7"/>
+<connect gate="G$1" pin="D8" pad="D8"/>
+<connect gate="G$1" pin="D9" pad="D9"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="RESET1" pad="RESET1"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6125,6 +6256,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="R11" library="adafruit" deviceset="R-US_" device="0309/10"/>
 <part name="PAD3" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="CY5" library="resistor" deviceset="CY" device="YC7B5"/>
+<part name="U$2" library="CRE-Lib1" deviceset="ARDUINONANO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6189,6 +6321,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="R11" gate="G$1" x="78.74" y="76.2" rot="R270"/>
 <instance part="PAD3" gate="G$1" x="73.66" y="76.2" rot="R270"/>
 <instance part="CY5" gate="G$1" x="134.62" y="119.38" rot="R180"/>
+<instance part="U$2" gate="G$1" x="-40.64" y="177.8"/>
 </instances>
 <busses>
 </busses>

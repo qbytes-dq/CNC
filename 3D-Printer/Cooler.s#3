@@ -6124,6 +6124,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="SET_CHAS" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
 <part name="R11" library="adafruit" deviceset="R-US_" device="0309/10"/>
 <part name="PAD3" library="wirepad" deviceset="WIREPAD" device="3,81/1,4"/>
+<part name="CY5" library="resistor" deviceset="CY" device="YC7B5"/>
 </parts>
 <sheets>
 <sheet>
@@ -6187,6 +6188,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="SET_CHAS" gate="G$1" x="29.972" y="71.12"/>
 <instance part="R11" gate="G$1" x="78.74" y="76.2" rot="R270"/>
 <instance part="PAD3" gate="G$1" x="73.66" y="76.2" rot="R270"/>
+<instance part="CY5" gate="G$1" x="134.62" y="119.38" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6195,7 +6197,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="V-GND" gate="G$1" pin="P"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="109.22" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="109.22" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
 <junction x="149.86" y="109.22"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -6206,6 +6209,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="149.86" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="CY2" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="109.22" x2="180.34" y2="116.84" width="0.1524" layer="91"/>
+<junction x="134.62" y="109.22"/>
+<pinref part="CY5" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="116.84" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND1"/>
@@ -6325,6 +6331,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="134.62" y1="129.54" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="134.62" y1="137.16" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="CY5" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="124.46" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
